@@ -23,6 +23,6 @@ Feature: Login Feature
       | loginButton |
 
     Then Error Message should be Dislayed
-      | Invalid |
+      | errormessage |
 
 

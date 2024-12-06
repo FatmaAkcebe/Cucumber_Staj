@@ -12,11 +12,11 @@ public class _01_LoginPage extends Parent {
         PageFactory.initElements(GWD.getDriver(), this);
     }
 
-    @FindBy(css = "[placeholder='Username']")
+    @FindBy(css = "input[placeholder='Username']")
     public WebElement username;
-    @FindBy(css = "[placeholder='Password']")
+    @FindBy(css = "input[placeholder='Password']")
     public WebElement password;
-    @FindBy(css = "[aria-label='LOGIN']")
+    @FindBy(css = "button[aria-label='LOGIN']")
     public WebElement loginButton;
     @FindBy(xpath = "//*[contains(text(),'Welcome')]")
     public WebElement successmessage;
