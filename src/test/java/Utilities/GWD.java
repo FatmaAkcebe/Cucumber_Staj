@@ -8,7 +8,7 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import java.time.Duration;
 import java.util.Locale;
 
-import static StepDefinitions._01_US_Steps.driver;
+import static StepDefinitions._01_US_Steps.*;
 
 public class GWD {
     private static ThreadLocal<WebDriver> threadDriver = new ThreadLocal<>();
