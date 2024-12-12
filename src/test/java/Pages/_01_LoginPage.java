@@ -12,15 +12,23 @@ public class _01_LoginPage extends Parent {
         PageFactory.initElements(GWD.getDriver(), this);
     }
 
-    @FindBy(css = "[placeholder='Username']")
+    @FindBy(css = "[placeholder='Kullanıcı Adı']")
     public WebElement username;
-    @FindBy(css = "[placeholder='Password']")
+    @FindBy(css = "[placeholder='Parola']")
     public WebElement password;
     @FindBy(css = "[aria-label='LOGIN']")
     public WebElement loginButton;
     @FindBy(xpath = "//*[contains(text(),'Welcome')]")
     public WebElement successmessage;
 
+    @FindBy(css = "[class='avatar-mini ng-star-inserted']")
+    public WebElement profil;
+
+    @FindBy(xpath = "//*[text()='Sign Out']")
+    public WebElement signOut;
+
+    @FindBy(xpath = "//div[@class='ng-star-inserted']/img")
+    public WebElement logo;
 
 
 
@@ -31,9 +39,10 @@ public class _01_LoginPage extends Parent {
             case "username": return this.username;
             case "password": return this.password;
             case "loginButton": return this.loginButton;
-
-
             case "successmessage": return this.successmessage;
+            case "profil": return this.profil;
+            case "signOut": return this.signOut;
+            case "logo": return this.logo;
         }
 
         return null;
