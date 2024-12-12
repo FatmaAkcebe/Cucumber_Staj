@@ -18,10 +18,10 @@ public class _05_AttendanceFeature extends Parent {
     public WebElement AttandanceExcecuses;
 
 
-    @FindBy(css = "[tooltip='ATTENDANCE_EXCUSE.TITLE.ADD']")
+    @FindBy(css = "[class='mat-mdc-tooltip-trigger mat-badge mdc-icon-button mat-mdc-icon-button mat-badge-accent mat-unthemed mat-mdc-button-base mat-badge-below mat-badge-after mat-badge-small mat-badge-hidden ng-star-inserted']")
     public WebElement add;
 
-    @FindBy(css = "[placeholder='Message']")
+    @FindBy(css = "[class='mat-mdc-form-field-infix ng-tns-c508571215-35']")
     public WebElement message;
 
 
