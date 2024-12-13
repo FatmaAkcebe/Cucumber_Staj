@@ -14,7 +14,6 @@ public class _02_HomePage extends Parent {
 
     @FindBy(xpath = "//div[@class='ng-star-inserted']/img")
     public WebElement Logo;
-
     @FindBy(css = "[page='COURSES'")
     public WebElement Courses;
 

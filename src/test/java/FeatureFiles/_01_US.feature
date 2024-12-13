@@ -1,5 +1,6 @@
 Feature: Login Feature
 
+
   Background:
     Given Navigate to Campus Website
 
@@ -12,7 +13,11 @@ Feature: Login Feature
       | loginButton |
 
     Then Login Message Should be Displayed
-      | successmessage |
+    And Click on the Element in Login Page
+      | profileSettings |
+    And Click on the Element in Login Page
+      | SignOut |
+
 
   Scenario: Negative Login
     When User sending keys in Login Page
@@ -23,6 +28,8 @@ Feature: Login Feature
       | loginButton |
 
     Then Error Message should be Dislayed
-      | errormessage |
+
+
+
 
 

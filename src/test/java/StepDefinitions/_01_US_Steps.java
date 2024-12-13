@@ -31,7 +31,6 @@ public class _01_US_Steps {
         }
     }
 
-
     @And("Click on the Element in Login Page")
     public void clickOnTheElementInLoginPage(DataTable dtButtons) {
         List<String> buttons = dtButtons.asList();
@@ -42,12 +41,19 @@ public class _01_US_Steps {
 
     @Then("Login Message Should be Displayed")
     public void loginMessageShouldBeDisplayed() {
-        lp.verifyMessageContainsText("Welcome");
+            String expectedMessage = "Welcome";
+            lp.ContainsText(lp.successmessage, expectedMessage);
+            String actualMessage = lp.successmessage.getText();
+            System.out.println("actualMessage = " + actualMessage);
     }
 
     @Then("Error Message should be Dislayed")
     public void errorMessageShouldBeDislayed() {
-        lp.verifyMessageContainsText("Invalid");
+        String expectedMessage = "Invalid";
+        lp.ContainsText(lp.invalidMessage, expectedMessage);
+        String actualMessage = lp.invalidMessage.getText();
+        System.out.println("actualMessage = " + actualMessage);
+
 
 
     }

@@ -12,16 +12,21 @@ public class _01_LoginPage extends Parent {
         PageFactory.initElements(GWD.getDriver(), this);
     }
 
-    @FindBy(css = "input[placeholder='Username']")
+    @FindBy(css = "input[placeholder='Kullanıcı Adı']")
     public WebElement username;
-    @FindBy(css = "input[placeholder='Password']")
+    @FindBy(css = "input[placeholder='Parola']")
     public WebElement password;
     @FindBy(css = "button[aria-label='LOGIN']")
     public WebElement loginButton;
+    @FindBy(css = "[class='username mr-12']")
+    public WebElement profileSettings;
+    @FindBy(xpath = "//*[text()='Sign Out']")
+    public WebElement SignOut;
+
     @FindBy(xpath = "//*[contains(text(),'Welcome')]")
     public WebElement successmessage;
-
-
+    @FindBy(xpath = "//*[contains(text(),'Invalid')]")
+    public WebElement invalidMessage;
 
 
     public WebElement getWebElement(String strElementName){
@@ -31,9 +36,12 @@ public class _01_LoginPage extends Parent {
             case "username": return this.username;
             case "password": return this.password;
             case "loginButton": return this.loginButton;
+            case "profileSettings": return this.profileSettings;
+            case "SignOut": return this.SignOut;
 
 
             case "successmessage": return this.successmessage;
+            case "invalidMessage": return this.invalidMessage;
         }
 
         return null;

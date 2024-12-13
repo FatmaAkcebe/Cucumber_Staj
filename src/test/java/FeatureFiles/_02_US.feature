@@ -8,13 +8,16 @@ Feature: Home Feature
     And Click on the Element in Login Page
       | loginButton |
     Then Login Message Should be Displayed
-      | successmessage |
 
-    Scenario: Home Page
-      And Click on the Element in Login Page
-        | logo |
 
-      Then Techno Study Website Should be Displayed
+  Scenario: Home Page
+    And Click on the Element in Login Pages
+      | Logo |
+
+    Then Techno Study Website Should be Displayed
+
+
+
 
 
 

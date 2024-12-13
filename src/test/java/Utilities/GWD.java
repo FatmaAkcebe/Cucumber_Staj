@@ -36,10 +36,30 @@ public class GWD {
         return threadDriver.get();
     }
 
-    public static void quitDriver() {
-        if (threadDriver.get() != null) {
-            threadDriver.get().quit();
-            threadDriver.remove();
+//    public static void quitDriver() {
+//        if (threadDriver.get() != null) {
+//            threadDriver.get().quit();
+//            threadDriver.remove();
+//        }
+
+        public static void quitDriver(){
+
+            try {
+                Thread.sleep(5000);
+            } catch (InterruptedException e) {
+                throw new RuntimeException(e);
+            }
+
+            if (threadDriver.get() != null)
+            {
+                threadDriver.get().quit();
+
+                //driver=null; // hattakini al, NULL değeri ata ve kendi SET, hattakini NULL yap
+                WebDriver hattaki= threadDriver.get();
+                hattaki=null;
+                threadDriver.set(hattaki);
+            }
+
         }
 
-}}
+}
