@@ -15,6 +15,5 @@ Feature: Attendance Feature
     When the student click on the button
       | Attandance |
     When the student click on the buttonn
-    When the student click on the button
-      | add |
+    When the student click on the buttonnnn
     When the student writes a message in the message field
