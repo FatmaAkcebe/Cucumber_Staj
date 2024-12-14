@@ -16,4 +16,9 @@ Feature: Attendance Feature
       | Attandance |
     When the student click on the buttonn
     When the student click on the buttonnnn
+    When the student select a day
     When the student writes a message in the message field
+    When the student attaches a file from local
+    And the student select the file
+    When the student click on the send button
+
