@@ -9,7 +9,8 @@ import io.cucumber.java.en.When;
 
 public class _10_US_Steps extends Parent {
 
-    _04_HamburgerMenu_Finance hf = new _04_HamburgerMenu_Finance();    @Given("The student Total FeeIs")
+    _04_HamburgerMenu_Finance hf = new _04_HamburgerMenu_Finance();
+    @Given("The student Total FeeIs")
     public void theStudentTotalFeeIs() {
     }
 
