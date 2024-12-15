@@ -16,12 +16,45 @@ public class _04_HamburgerMenu_Finance extends Parent {
 
     @FindBy(xpath = "//*[@class='svg-inline--fa fa-bars fa-fw']")
     public WebElement hamburgerMenu;
+    public void clickHamburgerMenu() {
+        Actions aksiyonlar = new Actions(GWD.getDriver());
+        aksiyonlar.moveToElement(hamburgerMenu).perform();
+    }
+
 
     @FindBy(xpath = "(//div[@class='mat-ripple mat-mdc-menu-ripple'])[2]")
     public WebElement finance;
 
     @FindBy(xpath = "//*[text()='My Finance']")
     public WebElement myFinance;
+
+     @FindBy(xpath = "//*[@id='mat-tab-group-3-label-0']")
+     public WebElement OnlinePayment;
+
+     @FindBy(xpath ="//*[@id='mat-tab-group-5-label-1']")
+     public WebElement FeeBalanceDetail;
+
+     @FindBy(xpath ="//* [contains(@style, 'padding-right: 8px') and contains(@style, 'font-weight: 500')]")
+     public WebElement StudentName;
+
+     //Student_5 tıklama metodu
+     public void clickStudentName(){
+         Actions aksiyonlar=new Actions(GWD.getDriver());
+         aksiyonlar.moveToElement(StudentName).perform();
+     }
+
+             //Online Payment a tıklama metodu
+    public void clickOnlinePayment(){
+       Actions aksiyonlar=new Actions(GWD.getDriver());
+       aksiyonlar.moveToElement(OnlinePayment).perform();
+    }
+
+    //Fee/BalanceDetail e tıklama metodu
+    public void clickFeeBalanceDetail(){
+        Actions aksiyonlar=new Actions(GWD.getDriver());
+        aksiyonlar.moveToElement(FeeBalanceDetail).perform();
+    }
+
 
     // Finance hover yapma
     public void hoverOverFinance() {
