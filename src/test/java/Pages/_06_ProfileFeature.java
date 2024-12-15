@@ -37,5 +37,6 @@ public class _06_ProfileFeature extends Parent {
     @FindBy(xpath = "//*[text()='Profile successfully updated']")
     public WebElement successMessage;
 
+
 }
 
