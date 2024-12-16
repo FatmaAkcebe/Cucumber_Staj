@@ -37,7 +37,7 @@ public class _02_US_Steps {
 
         Set<String> idler = GWD.getDriver().getWindowHandles();
         Iterator gosterge = idler.iterator();
-        String birinciPencereID = gosterge.next().toString();
+        String birinciPencereId = gosterge.next().toString();
         String ikinciPencereID = gosterge.next().toString();
 
         GWD.getDriver().switchTo().window(ikinciPencereID);

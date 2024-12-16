@@ -30,7 +30,6 @@ public class _04_US_Steps {
 
     }
 
-
     @And("Hover over the {string} link in he Hamburger Menu")
     public void hoverOverTheLinkInHeHamburgerMenu(String menuLink) {
 
