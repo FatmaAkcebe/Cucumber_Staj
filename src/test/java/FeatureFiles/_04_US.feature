@@ -14,7 +14,20 @@ Feature: Hamburger Menu Feature
       | HamburgerMenu |
     And Hover over the "Messaging" link in he Hamburger Menu
     Then The following options should be visible
-      | sendMessage |
-      | inbox       |
-      | outbox      |
-      | trash       |
+      | Message |
+      | Inbox   |
+      | Outbox  |
+      | Trash   |
+
+    When The user clicks on the "Message" button
+    Then The "Courses" page should be displayed
+
+    When The user clicks on the "Inbox" button
+    Then The "Inbox" page should be displayed
+
+    When The user clicks on the "Outbox" button
+    Then The "Outbox" page should be displayed
+
+    When The user clicks on the "Trash" button
+    Then The "Trash" page should be displayed
+

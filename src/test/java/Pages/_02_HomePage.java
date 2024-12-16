@@ -24,7 +24,7 @@ public class _02_HomePage extends Parent {
     public WebElement Attendance;
 
     @FindBy(css = "[page='ASSIGNMENT']")
-    public WebElement Assignments;
+    public WebElement Assignment;
     @FindBy(css = "[page='GRADING']")
     public WebElement Grading;
     @FindBy(xpath = "(//*[@aria-haspopup='menu'])[1]")
@@ -47,7 +47,7 @@ public class _02_HomePage extends Parent {
             case "Attendance":
                 return this.Attendance;
             case "Assignments":
-                return this.Assignments;
+                return this.Assignment;
             case "Grading":
                 return this.Grading;
             case "HamburgerMenu":

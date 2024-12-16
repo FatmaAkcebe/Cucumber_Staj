@@ -7,10 +7,10 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Parameters;
 
 @CucumberOptions(
-        features = {
-                "",
-                "",
-
+        features = {"src/test/java/FeaturesFiles/_01_Login.feature",
+                "src/test/java/FeaturesFiles/_02_Country.feature",
+                "src/test/java/FeaturesFiles/_03_CitizenShip.feature",
+                "src/test/java/FeaturesFiles/_04_CountryMultipleScenario.feature"
         },
         glue = {"StepDefinitions"},
         plugin = {"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"}

@@ -17,15 +17,22 @@ Feature: Top Nav Feature
       | Attendance    |
       | Assignments   |
       | Grading       |
-#      | HamburgerMenu |
-#      | Messages      |
-#      | Profile       |
 
     When The user clicks on the "Courses" button
     Then The "Courses" page should be displayed
 
     When The user clicks on the "Calendar" button
     Then The "Calendar" page should be displayed
+
+    When The user clicks on the "Attendance" button
+    Then The "Attendance" page should be displayed
+
+    When The user clicks on the "Assignment" button
+    Then The "Assignment" page should be displayed
+
+    When The user clicks on the "Grading" button
+    Then The "Grading" page should be displayed
+
 
 
 
