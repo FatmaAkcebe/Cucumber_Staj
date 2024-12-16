@@ -1,7 +1,6 @@
 package Utilities;
 
 public class MyFunc {
-
     public static void Bekle(int sn) {
 
         try {
@@ -11,5 +10,5 @@ public class MyFunc {
         }
     }
 
-}
 
+}
