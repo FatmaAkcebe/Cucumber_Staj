@@ -51,7 +51,7 @@ public class _03_US_Steps {
 
             Assert.assertTrue(
                     currentUrl.toLowerCase().contains(page.toLowerCase()),
-                    "The url does not contain the expected page name"+ page);
+                    "The url does nott contain the expected page name"+ page);
 
 
 
